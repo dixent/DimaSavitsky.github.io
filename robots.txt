@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://DimaSavitsky.github.io/sitemap.xml 
