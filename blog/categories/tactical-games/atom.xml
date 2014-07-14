@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title><![CDATA[Bits and Pieces]]></title>
-  <link href="http://DimaSavitsky.github.io/atom.xml" rel="self"/>
+
+  <title><![CDATA[Category: tactical games | Bits and Pieces]]></title>
+  <link href="http://DimaSavitsky.github.io/blog/categories/tactical-games/atom.xml" rel="self"/>
   <link href="http://DimaSavitsky.github.io/"/>
   <updated>2014-07-14T12:27:45+03:00</updated>
   <id>http://DimaSavitsky.github.io/</id>
@@ -43,19 +44,6 @@
 <p>Both characters get some emotional points(<em>marbles</em>) they can spend on actions per turn. Barbarian&rsquo;s probability of getting an <strong>enraged</strong> marble rather than <strong>calm</strong> is 6 to 1, for example, the Cleric&rsquo;s is 1 to 3.</p>
 
 <p>Being a poorly built character, Barbarian suffers if he occasionally gets a random <strong>calm</strong> point, because he has no use for it. What the player can do in this situation is: try to develop a character into having a use for them (communing with ancestor spirits mid-fight), or try to pump the character before the fights(&ldquo;they spoke badly about your ancestors&rdquo;) to improve the probability of him being <strong>enraged</strong>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[A Journey Begins]]></title>
-    <link href="http://DimaSavitsky.github.io/blog/2014/07/12/a-journey-begins/"/>
-    <updated>2014-07-12T17:53:22+03:00</updated>
-    <id>http://DimaSavitsky.github.io/blog/2014/07/12/a-journey-begins</id>
-    <content type="html"><![CDATA[<p>Hello, everyone, glad you&rsquo;re here.</p>
-
-<p>This one, right here, is a post to kickstart my blog about things that interest me. I mean Game Design and Storytelling.</p>
-
-<p>I will leave some half-baked ideas about games and stories I have along the way here. And than I will describe the ups and downs I&rsquo;ll go through with some kind of an actual implementation. Ideally, some of these will help me to build some kind of a design portfolio. But to be fair, I just want to have fun doing what I like.</p>
 ]]></content>
   </entry>
   
