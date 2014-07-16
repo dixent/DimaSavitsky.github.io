@@ -3,7 +3,7 @@
   <title><![CDATA[Bits and Pieces]]></title>
   <link href="http://DimaSavitsky.github.io/atom.xml" rel="self"/>
   <link href="http://DimaSavitsky.github.io/"/>
-  <updated>2014-07-14T12:27:45+03:00</updated>
+  <updated>2014-07-16T18:28:53+03:00</updated>
   <id>http://DimaSavitsky.github.io/</id>
   <author>
     <name><![CDATA[Dmitry]]></name>
@@ -11,6 +11,80 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Emotions-based Action Points for Turn-based Tactical Games. Part 2]]></title>
+    <link href="http://DimaSavitsky.github.io/blog/2014/07/16/emotions-based-action-points-for-turn-based-tactical-games-part-2/"/>
+    <updated>2014-07-16T16:28:33+03:00</updated>
+    <id>http://DimaSavitsky.github.io/blog/2014/07/16/emotions-based-action-points-for-turn-based-tactical-games-part-2</id>
+    <content type="html"><![CDATA[<p>In a <a href="http://DimaSavitsky.github.io/blog/2014/07/13/emotions-based-action-points-for-turn-based-tactical-games/">previous post</a> I started talking about a mechanic for using character emotions to determine which actions out of their pool they can use at any given time.</p>
+
+<p>In the next post I will try and plan a simplest possible prototypes for various implementations.</p>
+
+<p>Now, read further for specifics. I will elaborate more on some aspects of that mechanic I want to try and test. There will also be some lists of implementation variants.</p>
+
+<p>[more]</p>
+
+<h2>Color-coded marbles (or the part I like best)</h2>
+
+<p>So, in the start of each turn, all characters get a specific number of colored marbles representing their emotional state. Each character also has a pool of possible moves that &ldquo;cost&rdquo; a different number of differently colored marbles. Both moveset and marble-drop percentage depend on character build.</p>
+
+<p><em>complications and risks</em>:</p>
+
+<ul>
+<li><p>A lot of variety in movesets required. Each color needs some means of performing basic actions (movements, attacks) as well as excelling in it&rsquo;s own field.</p></li>
+<li><p>The whole marble system will not have a feel of being based on emotions, the player will handle it simply as multi-colored &ldquo;action points&rdquo; or &ldquo;mana&rdquo; (makes sense since the resemblance of MtG is significant)</p></li>
+<li><p>It will be hard to track a number of marbles each character has in a squad, so the player won&rsquo;t try to do that.</p></li>
+</ul>
+
+
+<p><em>variants</em>:</p>
+
+<ul>
+<li><p>The marbles are drawn at the moment it&rsquo;s time to make a move for that specific character, not simultaneously for all.</p></li>
+<li><p>The number may either vary from character to character, based on attributes, or be predefined.</p></li>
+<li><p>The number of marbles of each color for each character is limited, meaning the Shuffle Bag is used to drawing them (may be nicely prototyped on the table), as a less random Random. When the marble is used it gets back in the bag. This variant kinda also makes the whole mechanic look even more like MtG ripoff.</p></li>
+<li><p>Basic actions require <strong>any</strong>(colorless) marble to be paid for it (also a good way to let characters get rid of marbles of unneeded color).</p></li>
+<li><p>There is an additional &ldquo;action point&rdquo; colorless marble that shows how fast you can move. Each maneuver require you to pay some amount of both colorless(time) and colored(feelings) marbles, but basic actions need only colorless and instant actions only colored.</p></li>
+</ul>
+
+
+<h3>Colors and emotions</h3>
+
+<ol>
+<li><p>Red ( Anger ) &ndash; the emotion letting the character act aggressively.</p></li>
+<li><p>White ( Compassion ) &ndash; the ability to keep an eye on squadmates during combat. Using healing on, guarding someone else.</p></li>
+<li><p>Blue ( Focus ) &ndash; the ability to perform complex tasks and trick maneuvers. Setting and disarming traps, fencing, trick shots.</p></li>
+<li><p>Black ( Resolve ) &ndash; the emotion making the character do whatever needs to be done, whatever the cost. May be needed for both following the rules of a strict code and fighting dirty, finishing downed enemies.</p></li>
+<li><p>Yellow ( Vanity ) &ndash; the need to act in a flashy manner, drawing everybody&rsquo;s attention. Needed for giving orders, singing hymns, using exotic combat styles.</p></li>
+<li><p>Green ( Caution ) &ndash; ability to take care of oneself, act defensively.</p></li>
+</ol>
+
+
+<p><em>risks here</em>:</p>
+
+<ul>
+<li>The Red emotion seems out of place, having a lot less possible applications than other ones.</li>
+</ul>
+
+
+<p><em>variants</em>:</p>
+
+<ul>
+<li><p>Use seven &ldquo;Heavenly Virtue &ndash; Deadly Sin&rdquo; pairs as foundation for these.</p></li>
+<li><p>An abundance of any given color at one time is actually a weakness: a lot of red provokes berserker rage, a lot of green makes character act cowardly.</p></li>
+</ul>
+
+
+<h3>Building connections between squadmates</h3>
+
+<p>Between the battles, characters can interact to build relationships. If, for example, two of them are friends, than hurting one will give a second a number of <em>Anger</em> marbles to use in his next turn.</p>
+
+<h3>In-combat dialogue options</h3>
+
+<p>Another possible related mechanic I was thinking about: the in-combat character dialogue. Defying <a href="http://tvtropes.org/pmwiki/pmwiki.php/Main/TalkingIsAFreeAction">Talking is a Free Action trope</a>, characters interact during combat using their marbles to choose dialogue options. For example, if the squad members are the officers of the law, one of them can shout a short &ldquo;Stop, in the name of the king!&rdquo; by playing a <em>Focus</em> marble, making some enemies really give up. If none of them have a <em>Focus marble</em>, the fight will ensue.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Emotions-based action points for turn-based tactical games. Part 1]]></title>
