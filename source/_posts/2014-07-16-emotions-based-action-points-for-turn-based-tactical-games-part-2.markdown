@@ -15,7 +15,7 @@ In the next post I will try and plan a simplest possible prototypes for various 
 
 Now, read further for specifics. I will elaborate more on some aspects of that mechanic I want to try and test. There will also be some lists of implementation variants. 
 
-[more]
+<!-- more -->
 
 ## Color-coded marbles (or the part I like best)
 So, in the start of each turn, all characters get a specific number of colored marbles representing their emotional state. Each character also has a pool of possible moves that "cost" a different number of differently colored marbles. Both moveset and marble-drop percentage depend on character build.
