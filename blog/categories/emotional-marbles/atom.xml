@@ -4,7 +4,7 @@
   <title><![CDATA[Category: emotional marbles | Bits and Pieces]]></title>
   <link href="http://DimaSavitsky.github.io/blog/categories/emotional-marbles/atom.xml" rel="self"/>
   <link href="http://DimaSavitsky.github.io/"/>
-  <updated>2014-07-16T18:28:53+03:00</updated>
+  <updated>2014-07-16T18:32:54+03:00</updated>
   <id>http://DimaSavitsky.github.io/</id>
   <author>
     <name><![CDATA[Dmitry]]></name>
@@ -24,7 +24,8 @@
 
 <p>Now, read further for specifics. I will elaborate more on some aspects of that mechanic I want to try and test. There will also be some lists of implementation variants.</p>
 
-<p>[more]</p>
+<!-- more -->
+
 
 <h2>Color-coded marbles (or the part I like best)</h2>
 
